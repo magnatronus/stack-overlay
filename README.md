@@ -11,6 +11,11 @@ The widget takes 3 values
 - *showForeground* - a boolean to indicate if the foreground widget should be shown or hidden (defaults to false if not provided)
 
 
+# Demo Screen
+
+<img src="http://butterfly-mobile.uk/wp-content/uploads/2018/08/stackoverlay.gif" />
+
+
 # Using StackOverlay
 
 Take a look at the [plugin installation instructions](https://pub.dartlang.org/packages/stack_overlay#-installing-tab-).
