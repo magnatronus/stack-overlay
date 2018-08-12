@@ -1,3 +1,7 @@
+## [0.0.3] -   12 August 2018
+
+* Documentation updates.
+
 ## [0.0.2] -   12 August 2018
 
 * update environment to indicate Dart 2 support.

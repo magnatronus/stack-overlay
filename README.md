@@ -16,6 +16,9 @@ The widget takes 3 values
 <img src="http://butterfly-mobile.uk/wp-content/uploads/2018/08/stackoverlay.gif" />
 
 
+More info can be found [here](https://butterfly-mobile.uk/stackoverlay-flutter-plugin).
+
+
 # Using StackOverlay
 
 Take a look at the [plugin installation instructions](https://pub.dartlang.org/packages/stack_overlay#-installing-tab-).

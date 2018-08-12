@@ -13,7 +13,9 @@ import 'package:flutter/material.dart';
 /// The [foreground]  and [background] arguemenys must not be null.
 ///
 /// [background] is the main widget that will be displayed. It can be covered up by the [foreground]
+/// 
 /// [foreground] a widget that can be hidden or revealed using [showForeground]
+/// 
 /// [showForeground] a boolean that determines if the [foreground] is shown. If not specified defaults to false.
 class StackOverlay extends StatefulWidget {
   final Widget foreground;
