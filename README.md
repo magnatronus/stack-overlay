@@ -1,6 +1,6 @@
 # StackOverlay Widget plugin for Flutter
 
-StackOverlay is a widget that will use 2 stacked screens(widgets). The foreground widget is overlayed over the background one and can be hidden or shown depending on a boolean value passed to the StackOverlay widget, just take a look at the example for more details.
+StackOverlay is a widget that will uses 2 stacked screens(widgets). The foreground widget is overlayed over the background one and can be hidden or shown depending on a boolean value passed to the StackOverlay widget, just take a look at the example for more details.
 
 Originally designed to provide as a way of forcing a "login" screen to automatically be shown should a user not be logged in(to whatever service) then dismissed once the user has logged in.
 
