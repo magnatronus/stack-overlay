@@ -2,7 +2,7 @@ name: stack_overlay
 description: A Widget that displays 2 overlayed widgets and an optional wallpaper, the foreground Widget can be shown and hidden.
 author: Steve Rogers <srogers.uk@gmail.com>
 homepage: https://github.com/magnatronus/stack-overlay
-version: 0.1.0
+version: 0.1.1
 
 
 environment:
