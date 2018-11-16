@@ -1,3 +1,7 @@
+## [0.1.1] - 16 November 2018
+
+* removed README from example project
+
 ## [0.1.0] - 16 November 2018
 
 * Added an optional wallpaper background
