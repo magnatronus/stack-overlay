@@ -15,7 +15,7 @@ There is now an optional parameter called *wallpaper* . If this is specified (**
 
 # Demo Screen (with wallpaper)
 
-<img src="https://raw.githubusercontent.com/magnatronus/stack-overlay/master/stackoverlay.gif" />
+<img src="http://butterfly-mobile.uk/wp-content/uploads/2018/11/stackoverlay.gif" />
 
 
 More info can be found [here](https://butterfly-mobile.uk/stackoverlay-flutter-plugin).
