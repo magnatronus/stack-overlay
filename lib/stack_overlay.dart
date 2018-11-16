@@ -4,7 +4,17 @@ library stack_overlay;
 
 import 'package:flutter/material.dart';
 
-/// A widget that contains 2 child widgets, the foreground and background.
+/// A widget that contains 2 layers (child widgets), the foreground and the background as well as an optional [wallpaper]
+///
+/// The [wallpaper] is optional and should be a [BoxDecoration] widget.
+/// This is used to style the base layer and then (if your other layers are transparent) show as a background wallpaper.
+///
+/// For examples of implementing a wallpaper see example code included with the package. This shows a sample of what can be done using
+///  - a Linear Gradient
+///  - a Tiled Image
+///  - a Background Image
+///
+/// But you should be able to use any valid [BoxDecoration]
 ///
 /// This class displays 2 child widgets (foreground and background) the [foreground] being stacked
 /// on top of the [background]. The foreground widget can be hidden or displayed by specifying
@@ -13,18 +23,20 @@ import 'package:flutter/material.dart';
 /// The [foreground]  and [background] arguemenys must not be null.
 ///
 /// [background] is the main widget that will be displayed. It can be covered up by the [foreground]
-/// 
+///
 /// [foreground] a widget that can be hidden or revealed using [showForeground]
-/// 
+///
 /// [showForeground] a boolean that determines if the [foreground] is shown. If not specified defaults to false.
 class StackOverlay extends StatefulWidget {
   final Widget foreground;
   final Widget background;
+  final BoxDecoration wallpaper;
   final bool showForeground;
 
   StackOverlay(
       {@required this.foreground,
       @required this.background,
+      this.wallpaper,
       this.showForeground = false});
 
   @override
@@ -34,6 +46,7 @@ class StackOverlay extends StatefulWidget {
 class _StackOverlayState extends State<StackOverlay>
     with TickerProviderStateMixin {
   AnimationController _controller;
+  Container _wallpaper;
   final double _revealSpeed = 2.0;
 
   void _setForeground(bool show) {
@@ -46,6 +59,11 @@ class _StackOverlayState extends State<StackOverlay>
     super.initState();
     _controller = AnimationController(
         duration: const Duration(milliseconds: 1000), vsync: this);
+    if (widget.wallpaper == null) {
+      _wallpaper = Container();
+    } else {
+      _wallpaper = Container(decoration: widget.wallpaper);
+    }
   }
 
   @override
@@ -65,6 +83,7 @@ class _StackOverlayState extends State<StackOverlay>
 
     return Stack(
       children: <Widget>[
+        _wallpaper,
         widget.background,
         PositionedTransition(
             rect: layerAnimation,

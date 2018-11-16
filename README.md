@@ -10,10 +10,12 @@ The widget takes 3 values
 - *foreground*  - this is the dismissable foreground widget( for example a Login screen)
 - *showForeground* - a boolean to indicate if the foreground widget should be shown or hidden (defaults to false if not provided)
 
+There is now an optional parameter called *wallpaper* . If this is specified (**it must be a BoxDefinition widget**) it is used to generate a background to the complete stack. If your other layers have transparent backgrounds the wallpaper will show through -  take a look at the updated example code for more details.
 
-# Demo Screen
 
-<img src="http://butterfly-mobile.uk/wp-content/uploads/2018/08/stackoverlay.gif" />
+# Demo Screen (with wallpaper)
+
+<img src="https://raw.githubusercontent.com/magnatronus/stack-overlay/master/stackoverlay.gif" />
 
 
 More info can be found [here](https://butterfly-mobile.uk/stackoverlay-flutter-plugin).
